@@ -2,7 +2,7 @@ import Footer from "./Home/Footer"
 import Navbar from "./Home/Navbar"
 import DataProtectionSection from "./PrivacyPolicy/DataProtectionSection"
 import LegalLayout from "./PrivacyPolicy/LegalLayout"
-import LegalTabs from "./PrivacyPolicy/LegalTabs"
+// import LegalTabs from "./PrivacyPolicy/LegalTabs"
 // import TermsViewer from "./PrivacyPolicy/TermsViewer"
 import TransparencyHero from "./PrivacyPolicy/TransparencyHero"
 
@@ -11,7 +11,7 @@ const PrivacyPolicyPage = () => {
     <>
     <Navbar/>
     <TransparencyHero/>
-    <LegalTabs/>
+    {/* <LegalTabs/> */}
     {/* <TermsViewer/> */}
     <LegalLayout/>
     <DataProtectionSection/>

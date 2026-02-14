@@ -1,22 +1,24 @@
+import { PlatformSafetyIcon, PrivacyIcon, SecureInfrastructureIcon } from "@/src/Icons";
 
 export default function DataProtectionSection() {
   const items = [
-    {
-      icon: '',
-      title: "AES-256 Encryption",
-      text: "All video files and user metadata are encrypted at rest and in transit using industry-standard protocols.",
-    },
-    {
-      icon: '',
-      title: "Local Indian Servers",
-      text: "We utilize data centers in Mumbai and Chennai to ensure your data stays within national boundaries.",
-    },
-    {
-      icon: '',
-      title: "ISO 27001 Certified",
-      text: "Our security practices are audited annually to maintain international standards for information security.",
-    },
-  ];
+  {
+    icon : SecureInfrastructureIcon,
+    title: "Secure Infrastructure",
+    text: "VidoraHub runs on trusted cloud infrastructure providers that use modern encryption and security practices to protect user data.",
+  },
+  {
+    icon : PrivacyIcon,
+    title: "Privacy-First Design",
+    text: "We collect only the data required to operate the platform and do not sell personal information.",
+  },
+  {
+    icon : PlatformSafetyIcon,
+    title: "Responsible Platform Development",
+    text: "Security and data protection are built into VidoraHub from the beginning as the platform continues to evolve.",
+  },
+];
+
 
   return (
     <section className="bg-gray-50 py-20 px-6">
@@ -43,7 +45,7 @@ export default function DataProtectionSection() {
               >
                 {/* Icon */}
                 <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
-                  {/* <Icon size={20} className="text-blue-600" /> */}
+                  <Icon size={20} />
                 </div>
 
                 {/* Title */}

@@ -1,9 +1,10 @@
+import { TickIcon } from "@/src/Icons";
 
 export default function ComparisonSection() {
   const rows = [
     {
       feature: "Revenue Share",
-      vidora: "90% to Creator",
+      vidora: "80% to 90% to Creator",
       traditional: "45% to 55%",
     },
     {
@@ -32,7 +33,7 @@ export default function ComparisonSection() {
   return (
     <section className="bg-[#020617] py-24 px-6">
       <div className="max-w-5xl mx-auto text-center">
-        
+
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-200">
           Why VidoraHub?
@@ -44,32 +45,35 @@ export default function ComparisonSection() {
 
         {/* Table Card */}
         <div className="mt-10 bg-[#071428] border border-white/10 rounded-2xl overflow-hidden">
-          
+
           {/* Header */}
-          <div className="grid grid-cols-3 text-sm text-gray-400 border-b border-white/10 p-4">
+          <div className="grid grid-cols-[1.2fr_1fr_1fr] text-sm text-gray-400 border-b border-white/10 p-4">
             <div className="text-left">Features</div>
-            <div className="text-blue-400 font-medium">VidoraHub</div>
-            <div>Traditional Sites</div>
+            <div className="text-center text-blue-400 font-medium">VidoraHub</div>
+            <div className="text-center">Traditional Sites</div>
           </div>
 
           {/* Rows */}
           {rows.map((row, i) => (
             <div
               key={i}
-              className="grid grid-cols-3 p-4 text-sm border-b border-white/5 last:border-none"
+              className="grid grid-cols-[1.2fr_1fr_1fr] p-4 text-sm border-b border-white/5 last:border-none items-center"
             >
-              <div className="text-gray-400">{row.feature}</div>
+              <div className="text-gray-400 text-left">
+                {row.feature}
+              </div>
 
-              <div className="text-gray-200 flex items-center gap-2">
-                {/* {row.highlight && (
-                  <Check size={16} className="text-green-400" />
-                )} */}
+              <div className="text-gray-200 flex items-center justify-center gap-2">
+                {row.highlight && <TickIcon size={16} />}
                 {row.vidora}
               </div>
 
-              <div className="text-gray-500">{row.traditional}</div>
+              <div className="text-gray-500 text-center">
+                {row.traditional}
+              </div>
             </div>
           ))}
+
 
         </div>
       </div>

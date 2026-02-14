@@ -1,10 +1,6 @@
-"use client";
+'use client'
 
-import { useState } from "react";
-
-export default function LegalTabs() {
-  const [active, setActive] = useState("terms");
-
+export default function LegalTabs({ active, setActive }: any) {
   const tabs = [
     { id: "terms", label: "Terms of Service" },
     { id: "privacy", label: "Privacy Policy" },

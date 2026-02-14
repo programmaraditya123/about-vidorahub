@@ -4,12 +4,22 @@ export function useScrollSpy(ids: string[]) {
   const [active, setActive] = useState(ids[0]);
 
   useEffect(() => {
+    const container = document.getElementById("legal-scroll-container");
+    if (!container) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries.find((e) => e.isIntersecting);
-        if (visible) setActive(visible.target.id);
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
       },
-      { rootMargin: "-40% 0px -50% 0px" }
+      {
+        root: container,   
+        rootMargin: "-20% 0px -60% 0px",
+        threshold: 0.1,
+      }
     );
 
     ids.forEach((id) => {

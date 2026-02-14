@@ -27,8 +27,13 @@ export default function BeyondAlgorithmHero() {
 
         {/* Quote */}
         <p className="mt-6 text-gray-400 italic text-sm md:text-base">
-          "We didn’t set out to build another app. We set out to give Indian
-          creators back their voice in an era of digital noise."
+          "Creators shouldn’t depend on unpredictable algorithms
+          to reach their audience."
+        </p>
+        <p className="mt-6 text-gray-400 italic text-sm md:text-base">
+          VidoraHub is a creator-first video platform where
+          community matters more than virality,
+          and creators keep 90% of what they earn.
         </p>
 
         {/* Scroll indicator */}

@@ -1,46 +1,53 @@
+import { UploadIcon, PlayPlatformIcon, DiscoveryIcon, TickIcon } from "@/src/Icons";
 
 export default function EcosystemPillars() {
+
+
   const pillars = [
     {
-      icon: 'Wallet',
-      title: "Creator Monetization",
-      desc: "90/10 revenue split in favor of creators with seamless payouts.",
+      icon: UploadIcon,
+      title: "Simple Video Publishing",
+      desc: "Uploading and sharing videos on VidoraHub is designed to be fast and straightforward for creators of all levels.",
       bullets: [
-        "Zero transaction fees for early adopters",
-        "Multi-tier subscription models",
+        "Easy video uploads",
+        "Clean creator dashboard",
+        "Cross-device compatibility",
       ],
     },
     {
-      icon:' Users',
-      title: "Community Hubs",
-      desc: "Creator-led micro-communities with direct audience ownership.",
+      icon: DiscoveryIcon,
+      title: "Discovery & Community",
+      desc: "VidoraHub helps viewers discover new creators while enabling creators to build meaningful audiences.",
       bullets: [
-        "Private forum spaces",
-        "Direct messaging for supporters",
+        "Creator discovery features",
+        "Viewer engagement tools",
+        "Growing creator community",
       ],
     },
     {
-      icon: 'Shield',
-      title: "AI-Powered Safety",
-      desc: "Advanced NLP moderation trained on Indian languages.",
+      icon: PlayPlatformIcon,
+      title: "Reliable Video Platform",
+      desc: "We focus on smooth playback, stable uploads, and a consistent viewing experience across networks and devices.",
       bullets: [
-        "Real-time slur filtering",
-        "Regional context awareness",
+        "Optimized video playback",
+        "Mobile-friendly streaming",
+        "Performance-focused platform",
       ],
     },
   ];
 
+
   return (
     <section className="bg-[#020617] py-24 px-6">
       <div className="max-w-6xl mx-auto text-center">
-        
+
         {/* Heading */}
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-200">
-          Core Ecosystem Pillars
+          Built for Creators and Viewers
         </h2>
 
         <p className="text-gray-400 mt-2 text-sm">
-          Interact with the orbs to explore our technological breakthroughs.
+          The core features that make sharing and watching videos simple on VidoraHub.
         </p>
 
         {/* Pillars */}
@@ -50,12 +57,12 @@ export default function EcosystemPillars() {
 
             return (
               <div key={i} className="text-center">
-                
+
                 {/* Orb */}
                 <div className="relative w-48 h-48 mx-auto mb-6">
                   <div className="absolute inset-0 rounded-full border-[14px] border-blue-600/40 blur-[2px]" />
                   <div className="absolute inset-4 rounded-full bg-[#020617] flex items-center justify-center">
-                    {/* <Icon className="text-blue-500" size={28} /> */}
+                    <Icon size={28} />
                   </div>
                 </div>
 
@@ -72,7 +79,12 @@ export default function EcosystemPillars() {
                 {/* Bullets */}
                 <ul className="text-gray-400 text-sm space-y-1">
                   {pillar.bullets.map((b, idx) => (
-                    <li key={idx}>• {b}</li>
+                    <li key={idx} className="flex items-start gap-2">
+                      <div className="bg-green-500/10 p-1 rounded-full">
+                        <TickIcon />
+                      </div>
+                      <span>{b}</span>
+                    </li>
                   ))}
                 </ul>
               </div>

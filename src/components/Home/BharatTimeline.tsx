@@ -1,19 +1,25 @@
+import Image from 'next/image';
+import a from '../../Images/timeline1.jpg.png'
+import b from '../../Images/timeline2.png'
+import c from '../../Images/timeline3.png'
+
+
 export default function BharatTimeline() {
   const items = [
     {
       title: "The Spark",
-      text: "Conceived in the tech hubs of Bengaluru, VidoraHub began as a response to the need for a creator-first economy that truly understands the cultural nuances of the subcontinent.",
-      image: "/timeline1.jpg",
+      text: "VidoraHub started from a simple frustration — small and growing creators struggle to get discovered on most video platforms. We’re building a space where new voices, including regional creators across India, can share content and find their audience",
+      image: a,
     },
     {
       title: "Local Innovation",
-      text: "We built our proprietary compression algorithms and recommendation engines from scratch on Indian soil, ensuring peak performance across diverse network conditions.",
-      image: "/timeline2.jpg",
+      text: "We’re building VidoraHub step by step in India, focusing on smooth video playback, reliable uploads, and simple discovery features that work well even on slower networks. Our goal is to make video sharing accessible for creators across different devices and internet conditions.",
+      image: c,
     },
     {
       title: "Global Reach",
-      text: "Today, we export our innovation to the world. A platform that celebrates diversity, promotes digital sovereignty, and empowers creators from Mumbai to New York.",
-      image: "/timeline3.jpg",
+      text: "VidoraHub is built for creators everywhere. While rooted in India, the platform is designed so creators from any country can share videos, connect with audiences, and grow their communities.",
+      image: b,
     },
   ];
 
@@ -57,17 +63,25 @@ export default function BharatTimeline() {
                       </p>
                     </div>
 
-                    <img
-                      src={item.image}
-                      className="rounded-xl border border-white/10"
-                    />
+                    <div className="relative w-full h-56">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        className="object-cover rounded-xl border border-white/10"
+                      />
+                    </div>
                   </>
                 ) : (
                   <>
-                    <img
-                      src={item.image}
-                      className="rounded-xl border border-white/10"
-                    />
+                    <div className="relative w-full h-56">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        className="object-cover rounded-xl border border-white/10"
+                      />
+                    </div>
 
                     <div className="text-left pl-10">
                       <h3 className="text-purple-400 font-semibold mb-3">

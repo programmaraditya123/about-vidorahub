@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import a from '../../Images/promise.png'
+
 export default function PromiseSection() {
   return (
     <section className="bg-[#020617] py-28 px-6">
@@ -6,10 +9,10 @@ export default function PromiseSection() {
         {/* LEFT IMAGE */}
         <div>
           <div className="rounded-xl overflow-hidden border border-white/10">
-            <img
-              src="/promise.jpg"
+            <Image
+              src={a}
               alt="Creative safe sanctuary"
-              className="w-full h-[420px] object-cover"
+              className="w-full h-[470px] object-cover"
             />
           </div>
         </div>
@@ -21,21 +24,26 @@ export default function PromiseSection() {
           </h2>
 
           <p className="text-gray-400 leading-relaxed mb-8">
-            In late 2022, Use decided to pivot. VidoraHub was reborn not as a
-            competitor, but as a sanctuary — a place where creators own their
-            data, their audience, and their future.
+            VidoraHub is built on a simple promise:
+            creators should own their audience, their content,
+            and the value they create.
+
+            We’re building infrastructure designed for creators first —
+            not advertisers, not algorithms, and not platform lock-in.
           </p>
 
           {/* Feature cards */}
           <div className="flex flex-col sm:flex-row gap-4">
             <FeatureCard
-              title="Direct Monetization"
-              text="We bypass intrusive ad-revenue systems entirely."
+              title="Creator-First Monetization"
+              text="Creators earn directly from their audience —
+without relying on ad-driven revenue models"
             />
 
             <FeatureCard
-              title="Fair Reach"
-              text="Algorithms that reward depth, not just clicks."
+              title="Transparent Discovery"
+              text="Content is surfaced based on value and community,
+not manipulation or engagement hacks."
             />
           </div>
         </div>

@@ -1,22 +1,23 @@
 export default function EvolutionTimeline() {
   const timeline = [
-    {
-      title: "Oct 2022: The Spark",
-      text: "Founded in a small room in Bengaluru. Three creators, one whiteboard, and a shared frustration.",
-    },
-    {
-      title: "March 2023: Beta Launch",
-      text: "Opened doors to the first 500 creators. Feedback was raw, brutal, and incredibly helpful.",
-    },
-    {
-      title: "Sept 2023: 1M Milestone",
-      text: "Hit our first million views with zero ad spend. The community became our marketing engine.",
-    },
-    {
-      title: "Now: The Scale-Up",
-      text: "Serving 50k+ active creators across India and expanding into regional hubs.",
-    },
-  ];
+  {
+    title: "Jan 2026: The Beginning",
+    text: "VidoraHub started as an idea to build a creator-first video platform — one where creators own their audience and monetization.",
+  },
+  {
+    title: "Early 2026: Building the MVP",
+    text: "The first version of VidoraHub is being built from scratch, focusing on video publishing, creator profiles, and community-driven discovery.",
+  },
+  {
+    title: "Today: Laying the Foundation",
+    text: "We’re focused on building the core platform experience before opening doors to creators across India.",
+  },
+  {
+    title: "Next: Creator Launch",
+    text: "The next milestone is simple — the first creators, the first uploads, and the beginning of the VidoraHub community.",
+  },
+];
+
 
   return (
     <section className="bg-[#020617] py-28 px-6">

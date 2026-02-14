@@ -1,26 +1,27 @@
-// import { Shield, Wallet, Cpu } from "lucide-react";
+import { CreatorIcon ,GrowthIcon,VideoIcon} from "@/src/Icons";
 
 export default function ValuesSection() {
   const values = [
     {
-      icon: '',
-      title: "Data Sovereignty",
+      icon: CreatorIcon,
+      title: "Creator-First Platform",
       description:
-        "Your data stays where it belongs. We host infrastructure exclusively on Indian servers, complying with the highest standards of national digital security.",
+        "VidoraHub is designed to help small and growing creators share videos, express ideas, and build an audience without relying only on viral reach.",
     },
     {
-      icon: '',
-      title: "Creator Economy",
+      icon: VideoIcon,
+      title: "Smooth Video Experience",
       description:
-        "Democratizing monetization for the next billion creators. Our direct-to-creator payment systems eliminate middlemen and maximize local earnings.",
+        "We focus on reliable uploads, fast playback, and a clean viewing experience that works well across devices and different internet speeds.",
     },
     {
-      icon: "",
-      title: "Tech Excellence",
+      icon: GrowthIcon,
+      title: "Built for Growth",
       description:
-        "Proprietary AI and ML models developed by Indian engineers, optimized for low-latency streaming even in remote corners of the globe.",
+        "VidoraHub is continuously improving with better discovery, creator tools, and community features to support creators as the platform grows.",
     },
   ];
+
 
   return (
     <section className="bg-[#0e0714] py-24 px-6">
@@ -36,7 +37,7 @@ export default function ValuesSection() {
             >
               {/* Icon */}
               <div className="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center mb-5">
-                {/* <Icon className="text-purple-400" size={18} /> */}
+                <Icon size={18} />
               </div>
 
               {/* Title */}

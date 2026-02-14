@@ -1,3 +1,4 @@
+import { GithubIcon, MailIcon, UsersIcon } from "@/src/Icons";
 import Link from "next/link";
 // import { Github, Mail, Users } from "lucide-react";
 
@@ -26,13 +27,13 @@ export default function Footer() {
           {/* Social icons */}
           <div className="flex gap-3 mt-6">
             <IconCircle>
-              {/* <Github size={16} /> */}
+              <GithubIcon size={16} />
             </IconCircle>
             <IconCircle>
-              {/* <Users size={16} /> */}
+              <UsersIcon size={16} />
             </IconCircle>
             <IconCircle>
-              {/* <Mail size={16} /> */}
+              <MailIcon size={16} />
             </IconCircle>
           </div>
         </div>

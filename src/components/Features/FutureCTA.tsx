@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function FutureCTA() {
   return (
     <section className="bg-[#020617] py-24 px-6">
@@ -19,13 +21,17 @@ export default function FutureCTA() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-          <button className="bg-white text-blue-600 px-6 py-3 rounded-full text-sm font-medium">
+          <Link href={"https://www.vidorahub.com/login"} target="_blank">
+          <button className="bg-white text-blue-600 px-6 py-3 rounded-full text-sm font-medium cursor-pointer">
             I am a Creator
           </button>
-
-          <button className="border border-blue-300 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-blue-500/20 transition">
+          </Link>
+          
+          <Link href={"https://www.vidorahub.com/"} target="_blank" >
+          <button className="border border-blue-300 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-blue-500/20 transition cursor-pointer">
             I am a Viewer
           </button>
+          </Link>
         </div>
       </div>
     </section>
