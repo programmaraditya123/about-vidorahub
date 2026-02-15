@@ -41,7 +41,7 @@ export default function FounderQuote() {
               Aditya Saini
             </p>
             <p className="text-xs text-purple-400">
-              Founder & CEO, VidoraHub
+              Founder , VidoraHub
             </p>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
     <section className="flex flex-col items-center justify-center text-center min-h-[80vh] px-6 overflow-hidden bg-[#0e0714]">
@@ -31,13 +33,17 @@ export default function HeroSection() {
 
         {/* Buttons */}
         <div className="flex items-center justify-center gap-4 mt-8">
-          <button className="px-6 py-3 text-sm font-medium text-white rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 transition shadow-lg">
-            Explore the Mission
+          <Link href={'/features'}>
+          <button className="px-6 py-3 text-sm font-medium text-white rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 hover:opacity-90 transition shadow-lg cursor-pointer">
+            Explore the Features 
           </button>
-
-          <button className="px-6 py-3 text-sm font-medium text-gray-300 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition">
+          </Link>
+          
+          <Link href={'/ourstory'}>
+          <button className="px-6 py-3 text-sm font-medium text-gray-300 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition cursor-pointer">
             Our Story
           </button>
+          </Link>
         </div>
 
       </div>
