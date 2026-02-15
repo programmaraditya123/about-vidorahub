@@ -264,3 +264,67 @@ export function MailIcon({
   );
 }
 
+
+
+export function GenerativeFluxIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="2" fill="#a855f7" />
+      <circle cx="6" cy="6" r="1.5" fill="#a855f7" opacity="0.7" />
+      <circle cx="18" cy="6" r="1.5" fill="#a855f7" opacity="0.7" />
+      <circle cx="6" cy="18" r="1.5" fill="#a855f7" opacity="0.7" />
+      <circle cx="18" cy="18" r="1.5" fill="#a855f7" opacity="0.7" />
+
+      <path d="M12 12 L6 6" stroke="#a855f7" strokeWidth="1" />
+      <path d="M12 12 L18 6" stroke="#a855f7" strokeWidth="1" />
+      <path d="M12 12 L6 18" stroke="#a855f7" strokeWidth="1" />
+      <path d="M12 12 L18 18" stroke="#a855f7" strokeWidth="1" />
+    </svg>
+  );
+}
+
+
+export function NeuralHarmonyIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <rect
+        x="4"
+        y="4"
+        width="16"
+        height="16"
+        rx="6"
+        stroke="#a855f7"
+        strokeWidth="1.5"
+      />
+
+      <circle cx="12" cy="12" r="3" fill="#a855f7" />
+
+      <path d="M12 4 V8" stroke="#a855f7" strokeWidth="1" />
+      <path d="M12 16 V20" stroke="#a855f7" strokeWidth="1" />
+      <path d="M4 12 H8" stroke="#a855f7" strokeWidth="1" />
+      <path d="M16 12 H20" stroke="#a855f7" strokeWidth="1" />
+    </svg>
+  );
+}
+
+
+export function GlobalHubIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="9" stroke="#a855f7" strokeWidth="1.5" />
+
+      <ellipse
+        cx="12"
+        cy="12"
+        rx="5"
+        ry="9"
+        stroke="#a855f7"
+        strokeWidth="1"
+      />
+
+      <path d="M3 12 H21" stroke="#a855f7" strokeWidth="1" />
+      <path d="M6 6 C10 8 14 8 18 6" stroke="#a855f7" strokeWidth="1" />
+      <path d="M6 18 C10 16 14 16 18 18" stroke="#a855f7" strokeWidth="1" />
+    </svg>
+  );
+}

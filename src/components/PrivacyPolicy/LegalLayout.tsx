@@ -12,9 +12,14 @@ export default function LegalLayout() {
     <>
       <LegalTabs active={active} setActive={setActive} />
 
-      <section className="bg-gray-50 py-12 px-6">
+      <section className="bg-gray-50 py-8 md:py-12 px-4 md:px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-[240px_1fr] gap-6">
-          <LegalSidebar active={active} />
+          
+          {/* Sidebar hidden on mobile */}
+          <div className="hidden md:block">
+            <LegalSidebar active={active} />
+          </div>
+
           <LegalDocument active={active} />
         </div>
       </section>
